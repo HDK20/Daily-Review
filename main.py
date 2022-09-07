@@ -15,7 +15,7 @@ print(Fore.CYAN + """
 
 """)
 try:
-    mainpass = int(1234)
+    mainpass = int(200685)
     passkey = int(getpass(Fore.LIGHTGREEN_EX + "Password : "))
 
     if passkey == mainpass :
@@ -43,6 +43,10 @@ try:
                 out_file.close()
         except: 
             time.sleep(2)
+    else:
+        print (Fore.LIGHTRED_EX + "The password is incorrect")
+        print (Fore.WHITE)
+
 except:
     print (Fore.LIGHTRED_EX + "The password is incorrect")
     print (Fore.WHITE)
